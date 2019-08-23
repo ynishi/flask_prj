@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web:
+    build: docker
+    command: python src/app.py
+    volumes:
+      - .:/code
+    ports:
+      - "5000:5000"
